@@ -7,28 +7,39 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Trang Chủ</a></li>
-            <li><a href="/album">Album</a></li>
-            <li><a href="/du-an-xanh">Dự Án Xanh</a></li>
-            <li><a href="/cong-dong">Cộng Đồng</a></li>
-        </ul>
-    </nav>
-    <h1>Album của Dự Án Xanh</h1>
-    <div>
-        <p>Thư viện ảnh của các hoạt động và sự kiện trong dự án xanh.</p>
-        <img src="/images/logo.png" alt="Logo Dự Án Xanh" width="200">
-    </div>
+    <!-- Header -->
+    <header>
+        <a href="/" class="logo">Dự Án Xanh</a>
+        <nav class="navbar">
+            <a href="/">Trang Chủ</a>
+            <a href="/album" class="active">Album</a>
+            <a href="/du-an-xanh">Dự Án Xanh</a>
+            <a href="/cong-dong">Cộng Đồng</a>
+        </nav>
+    </header>
+
+    <!-- Album -->
     <section class="album">
-    <h1>Album Hình Ảnh</h1>
-    <div class="album-gallery">
-        <img src="/images/photo1.jpg" alt="Ảnh 1">
-        <img src="/images/photo2.jpg" alt="Ảnh 2">
-        <img src="/images/photo3.jpg" alt="Ảnh 3">
-        <img src="/images/photo4.jpg" alt="Ảnh 4">
-    </div>
-</section>
+        <h1>Thư Viện Ảnh</h1>
+        <div class="album-gallery" id="album-gallery">
+            <!-- Ảnh sẽ được tải động từ backend -->
+        </div>
+    </section>
+
+    <!-- Biểu mẫu tải ảnh -->
+    <section class="upload-form">
+        <h2>Tải Ảnh Lên</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="image">Chọn ảnh:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            <button type="submit" class="btn">Tải Lên</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dự Án Xanh. All rights reserved.</p>
+    </footer>
 
     <script src="/js/script.js"></script>
 </body>

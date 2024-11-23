@@ -7,32 +7,50 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Trang Chủ</a></li>
-            <li><a href="/album">Album</a></li>
-            <li><a href="/du-an-xanh">Dự Án Xanh</a></li>
-            <li><a href="/cong-dong">Cộng Đồng</a></li>
-        </ul>
-    </nav>
-    <h1>Chi Tiết Dự Án Xanh</h1>
-    <section class="projects">
-    <h1>Các Dự Án</h1>
-    <div class="projects-container">
-        <div class="project-card">
-            <h3>Trồng Cây Xanh</h3>
-            <p>Trồng 1 triệu cây xanh tại các khu đô thị.</p>
+    <!-- Header -->
+    <header>
+        <a href="/" class="logo">Dự Án Xanh</a>
+        <nav class="navbar">
+            <a href="/">Trang Chủ</a>
+            <a href="/album">Album</a>
+            <a href="/du-an-xanh" class="active">Dự Án Xanh</a>
+            <a href="/cong-dong">Cộng Đồng</a>
+        </nav>
+    </header>
+
+    <!-- Giới thiệu -->
+    <section class="project-intro">
+        <div class="container">
+            <h1>Về Dự Án Xanh</h1>
+            <p>Chúng tôi không chỉ nói về việc bảo vệ môi trường, chúng tôi hành động! Hãy khám phá các dự án mà chúng tôi đã thực hiện để tạo ra sự thay đổi.</p>
         </div>
-        <div class="project-card">
-            <h3>Thu Gom Rác</h3>
-            <p>Dọn sạch 10km bãi biển mỗi tháng.</p>
+    </section>
+
+    <!-- Danh sách Dự Án -->
+    <section class="project-list">
+        <h2>Các Dự Án Nổi Bật</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Trồng Cây Xanh</h3>
+                <p>Trồng 1 triệu cây xanh tại các thành phố lớn để giảm thiểu ô nhiễm không khí.</p>
+                <a href="#" class="btn">Tìm hiểu thêm</a>
+            </div>
+            <div class="project-card">
+                <h3>Chiến Dịch Làm Sạch Biển</h3>
+                <p>Tham gia cùng chúng tôi trong việc dọn sạch 10km bãi biển mỗi tháng.</p>
+                <a href="#" class="btn">Tìm hiểu thêm</a>
+            </div>
+            <div class="project-card">
+                <h3>Giảm Rác Thải Nhựa</h3>
+                <p>Khuyến khích sử dụng các sản phẩm thân thiện với môi trường, giảm sử dụng nhựa.</p>
+                <a href="#" class="btn">Tìm hiểu thêm</a>
+            </div>
         </div>
-        <div class="project-card">
-            <h3>Giảm Nhựa</h3>
-            <p>Khuyến khích sử dụng sản phẩm thân thiện môi trường.</p>
-        </div>
-    </div>
-</section>
-    <script src="/js/script.js"></script>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dự Án Xanh. All rights reserved.</p>
+    </footer>
 </body>
 </html>

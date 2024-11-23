@@ -28,3 +28,12 @@ const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
+app.get('/api/projects', (req, res) => {
+    const projects = [
+        { name: 'Trồng Cây Xanh', description: 'Trồng 1 triệu cây xanh...', link: '#' },
+        { name: 'Làm Sạch Biển', description: 'Dọn sạch 10km bãi biển...', link: '#' },
+        { name: 'Giảm Nhựa', description: 'Khuyến khích sử dụng sản phẩm xanh...', link: '#' }
+    ];
+    res.json(projects);
+});
+

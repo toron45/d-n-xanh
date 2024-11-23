@@ -1,12 +1,12 @@
 my-express-project/
 │
-├── public/                # Thư mục chứa tài nguyên tĩnh
+├── album.json          # File JSON lưu thông tin ảnh
+├── public/
 │   ├── css/
-│   │   └── style.css      # File CSS chính
+│   │   └── style.css   # CSS của trang web
 │   ├── js/
-│   │   └── script.js      # File JavaScript chính
-│   └── images/
-│       └── logo.png       # Hình ảnh
+│   │   └── script.js   # JavaScript của trang web
+│   └── uploads/        # Thư mục lưu trữ ảnh tải lên
 │
 ├── views/                 # Thư mục chứa các file HTML
 │   ├── index.html         # Trang chủ
