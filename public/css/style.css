@@ -31,3 +31,134 @@ h1 {
     text-align: center;
     color: #333;
 }
+header {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e78632;
+}
+
+header .navbar {
+    display: flex;
+    gap: 20px;
+}
+
+header .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header .navbar a:hover {
+    color: #e78632;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.project-card {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    font-size: 20px;
+    color: #e78632;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #e78632;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+}
+
+.home-content {
+    text-align: left;
+}
+
+.home-content h1 {
+    font-size: 36px;
+    color: #e78632;
+}
+
+.home-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.home-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.album-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.album-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.album-gallery img:hover {
+    transform: scale(1.05);
+}
